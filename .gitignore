@@ -1,7 +1,2 @@
 data/
 results/
-*.bam
-*.gtf
-*.fasta
-*.out
-*.err
