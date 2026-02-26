@@ -1,0 +1,6 @@
+/storage/gge/longseq_epitranscriptomics/2023-03-14_AG27_s23__D21/20240314_1514_X1_FAY48401_ed17c8a8/fastq_pass Muestra_1
+/storage/gge/longseq_epitranscriptomics/2023-03-18_AG27_s107_D0/20240321_1321_X3_FAY48430_f206e1c8/fastq_pass Muestra_2
+/storage/gge/longseq_epitranscriptomics/2023-03-18_AG27_s107_D21/20240321_1321_X1_FAY50474_6ce3f367/fastq_pass Muestra_3
+/storage/gge/longseq_epitranscriptomics/2023-03-18_AG27_s22_D21/20240318_1230_X4_FAY50563_327dc7af/fastq_pass Muestra_4
+/storage/gge/longseq_epitranscriptomics/2023-03-18_AG27_s23_D0/20240318_1230_X2_FAY48397_885b3aee/fastq_pass Muestra_5
+/storage/gge/longseq_epitranscriptomics/2024-03-27_AG27_s107_D0/20240327_1527_X3_FAY50469_6afd2446/fastq_pass Muestra_6
