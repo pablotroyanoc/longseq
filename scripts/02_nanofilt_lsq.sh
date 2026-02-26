@@ -11,5 +11,5 @@ module load anaconda
 conda activate nanoplot_env
 
 for i in {1..6}; do
-    NanoFilt -q 6 data/Muestra_${i}.fastq.gz > data/Muestra_${i}_filtered.fastq
+    zcat data/Muestra_${i}.fastq.gz | NanoFilt -q 6 > data/Muestra_${i}_filtered.fastq
 done
