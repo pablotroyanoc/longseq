@@ -4,7 +4,7 @@
 #SBATCH --error=logs/qc_loop%j.err
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
-#SBATCH --time=2git pull origin main 10:00:00
+#SBATCH --time=20:00:00
 #SBATCH --qos=short
 
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
