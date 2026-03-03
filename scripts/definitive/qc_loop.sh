@@ -16,9 +16,9 @@ while read -r RUTA_EXTERNA NOMBRE_CORTO; do
     FICHERO_FASTQ=$(ls ${RUTA_EXTERNA}/*.fastq | head -n 1)
 
     python ~/Programs/SQANTI3/sqanti3_qc.py \
-        $FICHERO_FASTQ \
-        $GTF \
-        $FASTA \
+        --isoforms $FICHERO_FASTQ \
+        --refGTF $GTF \
+        --refFasta $FASTA \
         --fasta \
         --aligner_choice minimap2 \
         --output "${NOMBRE_CORTO}_QC" \
