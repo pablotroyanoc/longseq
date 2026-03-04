@@ -13,10 +13,11 @@ FASTA=~/longseq/data/genome_reference/Homo_sapiens.GRCh38.dna_sm.primary_assembl
 RENAME_FILE="../../rename.txt"
 
 while read -r RUTA_EXTERNA NOMBRE_CORTO; do
-    FICHERO_FASTQ=$(ls ${RUTA_EXTERNA}/*.fastq | head -n 1)
+
+    zcat ${RUTA_EXTERNA}/*.fastq.gz > "${NOMBRE_CORTO}.full.fastq"
 
     python ~/Programs/SQANTI3/sqanti3_qc.py \
-        --isoforms $FICHERO_FASTQ \
+        --isoforms "${NOMBRE_CORTO}.full.fastq" \
         --refGTF $GTF \
         --refFasta $FASTA \
         --fasta \
@@ -24,5 +25,7 @@ while read -r RUTA_EXTERNA NOMBRE_CORTO; do
         --output "${NOMBRE_CORTO}_QC" \
         --dir "../../results/sqanti_qc/${NOMBRE_CORTO}" \
         -t $SLURM_CPUS_PER_TASK
+    
+    rm "${NOMBRE_CORTO}.full.fastq"
 
 done < "$RENAME_FILE"
