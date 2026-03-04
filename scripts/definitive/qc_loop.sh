@@ -7,13 +7,13 @@
 #SBATCH --time=20:00:00
 #SBATCH --qos=short
 
+module load anaconda
+conda activate sqanti3
+
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 GTF=~/longseq/data/anotation/Homo_sapiens.GRCh38.115.chr.gtf
 FASTA=~/longseq/data/genome_reference/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa
 RENAME_FILE="../../rename.txt"
-
-module load anaconda
-conda activate sqanti3
 
 while read -r RUTA_EXTERNA NOMBRE_CORTO; do
 
