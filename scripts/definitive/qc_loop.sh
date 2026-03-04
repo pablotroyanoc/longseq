@@ -12,6 +12,9 @@ GTF=~/longseq/data/anotation/Homo_sapiens.GRCh38.115.chr.gtf
 FASTA=~/longseq/data/genome_reference/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa
 RENAME_FILE="../../rename.txt"
 
+module load anaconda
+conda activate sqanti3
+
 while read -r RUTA_EXTERNA NOMBRE_CORTO; do
 
     zcat ${RUTA_EXTERNA}/*.fastq.gz > "${NOMBRE_CORTO}.full.fastq"
