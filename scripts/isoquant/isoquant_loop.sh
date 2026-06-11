@@ -14,7 +14,7 @@ ISO_EXEC="/home/patroy/programs/isoquant/IsoQuant/isoquant.py"
 GENOME="$HOME/longseq/data/genome_reference/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa"
 GTF="$HOME/longseq/data/anotation/Homo_sapiens.GRCh38.115.chr.gtf"
 
-for i in {2..6}
+for i in {1..6}
 do
     python3 $ISO_EXEC \
       --reference $GENOME \
